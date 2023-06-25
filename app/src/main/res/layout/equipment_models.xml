@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="50dp"
+    app:cardBackgroundColor="@color/yellow">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<!--        Equipment IMAGE-->
+        <FrameLayout
+            android:id="@+id/framelayout_equipmentModels"
+            android:background="@drawable/rounded_corner"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" >
+            <ImageView
+                android:id="@+id/imageEquipmentModel"
+                android:src="@drawable/logo2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+<!--        Nom de l'équipement-->
+        <TextView
+            android:id="@+id/nameEquipmentModel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Nom"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toEndOf="@+id/framelayout_equipmentModels"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+<!--        Domaine-->
+        <TextView
+            android:id="@+id/domainEquipmentModel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Domaine"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toEndOf="@+id/framelayout_equipmentModels"
+            app:layout_constraintTop_toBottomOf="@+id/nameEquipmentModel"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+<!--        Nombre de défauts-->
+        <TextView
+            android:id="@+id/defaultsEquipmentModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_text"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toEndOf="@+id/framelayout_equipmentModels"
+            app:layout_constraintTop_toTopOf="@+id/domainEquipmentModel"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+<!--        Défauts-->
+        <TextView
+            android:id="@+id/nbDefaultsEquipmentModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintStart_toEndOf="@+id/defaultsEquipmentModel"
+            app:layout_constraintTop_toTopOf="@+id/domainEquipmentModel"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
