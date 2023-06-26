@@ -36,11 +36,11 @@ J'ai effectué un changement de la ligne **"classpath 'com.google.gms:google-ser
 J'ai également installé le **SDK de la "Real Time Database"** pour essayer d'accéder à la base de données Firebase, mais je n'arrive pas à accéder au projet Firebase à partir du fichier google-services.json. J'ai essayé de le faire pour récupérer les données partagées des fichiers .CSV, notamment les images.
 Les images des équipements sont donc statiques (logo de Beeldi).
 
-- **Conversion CSV en JSON**:
+- **Conversion CSV to JSON**:
 Étant donné que je n'ai pas pu accéder à la base de données Firebase, j'ai pensé **convertir** les données des documents partagés en **JSON** et les utiliser pour les afficher dans le RecyclerView. Les fichiers .csv partagés contiennent les liens des images à utiliser. Cependant, n'ayant pas accès à la base de données, l'accès aux images est refusé.
 
 - **Échappement des chaînes de caractères** :
-J'ai rencontré des problèmes d'échappement de chaînes de caractères dans mon fichier **strings.xml** malgré différentes solutions (par exemple : \ ).
+J'ai rencontré des problèmes d'échappement de chaînes de caractères dans mon fichier **strings.xml** malgré différentes solutions apportées (par exemple : \ ).
 
 - Informations à afficher :
 Je n'ai pas compris quelles informations afficher pour les **points de contrôle** des équipements.
