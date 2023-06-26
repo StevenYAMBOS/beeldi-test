@@ -11,22 +11,21 @@ import com.beeldi.beelding.R
 import com.beeldi.beelding.model.EquipmentModels
 import com.beeldi.beelding.view.EquipmentDetails
 
-
-
 class EquipmentsAdapter (private var equipmentList : ArrayList<EquipmentModels>) :
     RecyclerView.Adapter<EquipmentsAdapter.ViewHolder>() {
 
+    // We'll use 'onItemClick' in Main Activity and give it an intent to open a new activity
     var onItemClick : ((EquipmentModels) -> Unit)? = null
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val image : ImageView = itemView.findViewById(R.id.imageEquipmentModel)
-        val title : TextView = itemView.findViewById(R.id.nameEquipmentModel)
-        val domain : TextView = itemView.findViewById(R.id.domainEquipmentModel)
-        val defaults : TextView = itemView.findViewById(R.id.nbDefaultsEquipmentModel)
+        val image : ImageView = itemView.findViewById(R.id.imageEquipmentModel) // Equipment image (from equipment_models.xml)
+        val title : TextView = itemView.findViewById(R.id.nameEquipmentModel) // Equipment name (from equipment_models.xml)
+        val domain : TextView = itemView.findViewById(R.id.domainEquipmentModel) // Equipment domain (from equipment_models.xml)
+        val nbIssues : TextView = itemView.findViewById(R.id.nbIssuesEquipmentModel) // Equipment number of issues (from equipment_models.xml)
     }
 
-//    VA filtrer les équipements par nom
-    fun setFilteresList(equipmentList: ArrayList<EquipmentModels>) {
+//    To filter equipment by names, I use the function in Main Activity inside the 'filterList' function
+    fun setFilteredList(equipmentList: ArrayList<EquipmentModels>) {
         this.equipmentList = equipmentList
         notifyDataSetChanged()
     }
@@ -40,7 +39,7 @@ class EquipmentsAdapter (private var equipmentList : ArrayList<EquipmentModels>)
         holder.image.setImageResource(currentItem.equipmentImage)
         holder.title.text = currentItem.equipmentName
         holder.domain.text = currentItem.equipmentDomain
-        holder.defaults.text = currentItem.numberDefaults.toString()
+        holder.nbIssues.text = currentItem.numberIssues.toString()
 
         holder.itemView.setOnClickListener {
             onItemClick?.invoke(currentItem)

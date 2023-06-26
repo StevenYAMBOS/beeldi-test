@@ -4,16 +4,26 @@ import android.os.Parcel
 import android.os.Parcelable
 
 data class EquipmentModels(
-    var equipmentImage : Int,
-    var equipmentName : String,
-    var equipmentDomain : String,
-    var numberDefaults : Int
+    // Part 1 (of the test)
+    var equipmentImage : Int, // Equipment image
+    var equipmentName : String, // Equipment name
+    var equipmentDomain : String, // Equipment domain
+    var numberIssues : Int, // Equipment number of issues
+
+    // Part 2 (of the test)
+    var equipmentControlPoint : String, // Equipment control point
+    var issueImage : Int, // Equipment image of the issue
+    var recommendation : String // Equipment issue recommendation
+
 ) : Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readInt(),
         parcel.readString()!!,
         parcel.readString()!!,
-        parcel.readInt()
+        parcel.readInt(),
+        parcel.readString()!!,
+        parcel.readInt(),
+        parcel.readString()!!
     ) {
     }
 
@@ -21,7 +31,10 @@ data class EquipmentModels(
         parcel.writeInt(equipmentImage)
         parcel.writeString(equipmentName)
         parcel.writeString(equipmentDomain)
-        parcel.writeInt(numberDefaults)
+        parcel.writeInt(numberIssues)
+        parcel.writeString(equipmentControlPoint)
+        parcel.writeInt(issueImage)
+        parcel.writeString(recommendation)
     }
 
     override fun describeContents(): Int {
@@ -38,3 +51,4 @@ data class EquipmentModels(
         }
     }
 }
+

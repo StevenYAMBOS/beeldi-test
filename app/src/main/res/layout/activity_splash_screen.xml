@@ -7,6 +7,9 @@
     tools:context=".view.SplashScreen"
     android:background="@color/yellow">
 
+<!--    CONTEXT:-->
+<!--    Splash screen-->
+
     <ImageView
         android:id="@+id/logo_splashScreen"
         android:layout_width="300dp"

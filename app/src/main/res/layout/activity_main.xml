@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".view.MainActivity">
 
+<!--    CONTEXT:-->
+<!--    Application main screen-->
+
 <!--    TOOLBAR-->
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/AppBarrLayout_EquipmentListScreen"

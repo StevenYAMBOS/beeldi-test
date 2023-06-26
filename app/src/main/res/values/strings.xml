@@ -1,4 +1,5 @@
 <resources>
+
     <!--    GENERAL-->
     <string name="app_name">Beelding</string>
 
@@ -10,11 +11,10 @@
 
 
 <!--    SCREEN : Equipment Models-->
-    <string name="default_text">Nombre de défauts: </string>
+    <string name="default_text">Nombre de défauts :</string>
 
 
 <!--    Equipment NAMES-->
-
     <string name="chaudiere_gaz">Chaudière gaz</string>
     <string name="armoire_electrique_chaufferie">Armoire électrique Chaufferie</string>
     <string name="pot_a_boue_filtre_desemboueur">Pot à boue Filtre désemboueur</string>
@@ -76,5 +76,67 @@
     <string name="batiment">BATIMENT</string>
     <string name="electricite_courants_faibles">ELECTRICITE COURANTS FAIBLES</string>
     <string name="incendie_et_securite">INCENDIE ET SECURITE</string>
+
+
+<!--    Control points (Checkpoints)-->
+    <string name="checkpoint1">Contrôler la présence de la documentation constructeur (DOE, notice d\'utilisation, garanties, etc.)</string>
+    <string name="checkpoint2">Contrôler l\'absence de risque pour accéder et maintenir l\'équipement (et ses organes de coupure le cas échéant)</string>
+    <string name="checkpoint3">Contrôler l\'absence de défaut et/ou alarme</string>
+    <string name="checkpoint4">Contrôler l\'absence d\'odeur, de vibration ou de bruit anormal</string>
+
+
+    <!--    Equipment RECOMMENDATION-->
+<!--    Commented strings have been added manually-->
+    <string name="chaudiere_gaz_recommendation">Rendement nominal à 80/60°C 93,5%. Brûleur bas-Nox surfacique modulant à pré mélange total, refroidi par l’eau permettant de faible taux de rejets polluants. Les chaudières fonctionnent en régime constant pour assurer une température suffisamment haute au p</string>
+<!--    <string name="armoire_electrique_chaufferie_recommendation">L\'équipement présente peu de risque. Il manque des documentations et informations liées à la prévention pour assurer une bonne maintenance de l\'équipement (pictogramme, schéma électrique, etc…). Nous conseillons la mise en place d'un compteur électrique</string>-->
+<!--    <string name="pot_a_boue_filtre_desemboueur_recommendation">Solution de clarification. S\'assurer de la bonne réalisation de la maintenance et du nettoyage du filtre. Il est possible de mettre en place en complément : - un coffret de détection d\'encrassement avec pressostat - Une régulation automatique du pH</string>-->
+    <string name="groupe_de_maintien_de_pression_chauffage_recommendation">Aucune préconisation</string>
+    <string name="vanne_et_robinetterie_gaz_electrovanne_coupure_recommendation">Aucune préconisation</string>
+<!--    <string name="pompe_charge_chaudiere_1_recommendation">Nous conseillons d\'analyser et comparer le débit de la pompe recyclage à la somme des débits des réseaux secondaires pour assurer un retour de température minimale aux chaudières (amélioration de la condensation des chaudières)</string>-->
+    <string name="vanne_et_robinetterie_gaz_chaudiere_recommendation">Aucune préconisation</string>
+<!--    <string name="compteur_gaz_chaudiere_1_recommendation">Il est conseillé d\'étalonner régulièrement les compteurs gaz. Nous préconisons de réaliser un relevé et suivi hebdommadaire du compteur gaz pour améliorer la performance énergétique de l'installation</string>-->
+<!--    <string name="compteur_gaz_chaudiere_2_recommendation">Il est conseillé d\'étalonner régulièrement les compteurs gaz. Nous préconisons de réaliser un relevé et suivi hebdommadaire du compteur gaz pour améliorer la performance énergétique de l'installation</string>-->
+<!--    <string name="pompe_charge_chaudiere_2_recommendation">Nous conseillons d\'analyser et comparer le débit de la pompe recyclage à la somme des débits des réseaux secondaires pour assurer un retour de température minimale aux chaudières (amélioration de la condensation des chaudières)</string>-->
+    <string name="autre_doe_recommendation">Aucune préconisation</string>
+    <string name="echangeur_a_plaques_recommendation">Absence de programme anti légionelle consigne jour et nuit 55°C Alarme basse à 50°C Alarme haute à 60°C Programme C2 de 22 h à 6h (idem que C1)</string>
+    <string name="pompe_doseuse_reseau_ecs_recommendation">Pompe à débit constant/proportionnel commandée par signal numérique, avec contrôle de niveau et réglable par entrée d’impulsions - diviseur (1÷100) et multiplicateur (1÷10). 2 l/h. Produit utilisé : PEP 04 (produit anti corrosion pour réseau d\'eaux chaudes</string>
+    <string name="pompe_secondaire_ecs_recommendation">Aucune préconisation</string>
+<!--    <string name="compteur_eau_de_ville_general_recommendation">Qn 25 m3/h ; 6 bars. Il est conseillé d\'étalonner tous les 15 ans les compteurs eau de ville</string>-->
+    <string name="pompe_primaire_echangeur_ecs_recommendation">Aucune préconisation</string>
+    <string name="pompe_bouclage_ecs_bat_c_d_e_f_recommendation">Aucune préconisation</string>
+    <string name="pompe_bouclage_ecs_bat_a_b_recommendation">Aucune préconisation</string>
+    <string name="pompe_de_relevage_recommendation">Aucune préconisation</string>
+    <string name="pompe_distribution_ec_recommendation">Aucune préconisation</string>
+    <string name="regulateur_chaudiere_recommendation">Aucune préconisation</string>
+    <string name="ballon_de_stockage_ecs_recommendation">Aucune préconisation</string>
+    <string name="detecteur_gaz_recommendation">Réglage du zéro ainsi que de la sensibilité au gaz étalon 2,5% LIE CH4. Seuils d’alarme : AL1= 25% AL2= 50%. Prévoir le remplacement des 4 cellules</string>
+    <string name="local_chaufferie_recommendation">Aucune préconisation</string>
+    <string name="compensateur_de_dilatation_recommendation">Aucune préconisation</string>
+    <string name="servomoteur_reseau_chaud_recommendation">Aucune préconisation</string>
+    <string name="distribution_hydraulique_chaufferie_recommendation">Bouteille casse pression</string>
+    <string name="automate_reseau_chaud_recommendation">Programme : Lundi à Dimanche de 5h à 22h30. Loi de régulation : Text 15°C -> Tc 30°C, Text -5°C -> Tc 70°C. Contrôler le réduit de nuit</string>
+    <string name="armoire_automate_recommendation">Aucune préconisation</string>
+    <string name="clapet_reseau_ef_recommendation">Aucune préconisation</string>
+    <string name="detendeur_recommendation">Aucune préconisation</string>
+    <string name="centrale_detection_incendie_recommendation">4 détecteurs de fumée</string>
+<!--    <string name="armoire_electrique_recommendation">Aucun contrôle réglementaire effectué sur l\'équipement, présence de multiples défauts de sécurité et conformité (absence d'un arrêt d'urgence, etc.)</string>-->
+    <string name="baes_recommendation">Aucune préconisation</string>
+    <string name="extincteur_a_poudre_recommendation">Aucune préconisation</string>
+    <string name="pompe_distribution_recommendation">Aucune préconisation</string>
+    <string name="armoire_electrique_s_station_recommendation">Aucune préconisation</string>
+    <string name="automate_reseau_chaud_batiment_g_recommendation">Programme : Lundi à Dimanche de 5h à 23h00. Loi de régulation : Text 15°C -> Tc 30°C, Text -5°C -> Tc 70°C. Contrôler le réduit de nuit</string>
+    <string name="local_technique_s_station_recommendation">Aucune préconisation</string>
+    <string name="echangeur_a_plaques_s_station_recommendation">10h10 décalage de 2h. Consigne température 59 °C et 58°C. Température limite haute 65°C. Limite basse 50°C. Programme horaire 22h - 6h. Absence de programme anti legionnelle</string>
+    <string name="pompe_primaire_echangeur_s_station_recommendation">Aucune préconisation</string>
+<!--    <string name="pompe_doseuse_s_station_recommendation">Produit utilisé : PEP 04 (produit anti orrosion pour réseau d\'eaux chaudes sanitaires). Dosage actuel : 60 / 90 ml/m3. Nous préconisons de réaliser une analyse physico chimique du réseau d'eau chaude</string>-->
+<!--    <string name="compteur_eau_de_ville_s_station_recommendation">Il est conseillé d\'étalonner les compteurs eau (tous les 15 ans à minima). Nous préconisons de réaliser un relevé et suivi hebdommadaire du compteur d\'eau de ville pour améliorer la performance énergétique de l'installation</string>-->
+    <string name="pompe_distribution_ec_batiment_g_recommendation">Aucune préconisation</string>
+    <string name="servomoteur_reseau_chaud_batiment_g_recommendation">Contrôler les positions "début et fin" de course de l\'équipement</string>
+    <string name="pot_a_boue_s_station_recommendation">Aucune préconisation</string>
+    <string name="pompe_recyclage_recommendation">Aucune préconisation</string>
+    <string name="pompe_recyclage_n2_recommendation">Aucune préconisation</string>
+    <string name="extincteur_a_poudre_s_station_recommendation">Aucune préconisation</string>
+    <string name="extincteur_au_co2_s_station_recommendation">Aucune préconisation</string>
+    <string name="distribution_hydraulique_s_station_recommendation">Aucune préconisation</string>
 
 </resources>

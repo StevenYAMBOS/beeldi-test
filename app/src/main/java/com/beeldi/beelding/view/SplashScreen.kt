@@ -12,7 +12,7 @@ class SplashScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        supportActionBar?.hide()
+        supportActionBar?.hide() // Hiding the toolbar
 
         val handler = Handler(Looper.getMainLooper())
 
